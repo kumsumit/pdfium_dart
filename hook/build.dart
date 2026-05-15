@@ -14,7 +14,8 @@ void main(List<String> args) async {
     if (input.config.code.targetOS == OS.iOS) return;
 
     final target = _PdfiumTarget.fromCodeConfig(input.config.code);
-    final outputSubdir = _pdfiumRelease.replaceAll('%2F', '_');
+    final outputSubdir =
+        '${_pdfiumRelease.replaceAll('%2F', '_')}/${target.archivePlatform}_${target.archiveArch}';
     final outputFile = input.outputDirectoryShared.resolve(
       '$outputSubdir/${target.libraryFileName}',
     );
