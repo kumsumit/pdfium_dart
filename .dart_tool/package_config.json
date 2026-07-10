@@ -51,9 +51,9 @@
     },
     {
       "name": "code_assets",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/code_assets-1.0.0",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/code_assets-1.2.1",
       "packageUri": "lib/",
-      "languageVersion": "3.9"
+      "languageVersion": "3.10"
     },
     {
       "name": "collection",
@@ -117,7 +117,7 @@
     },
     {
       "name": "hooks",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/hooks-1.0.3",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/hooks-2.0.2",
       "packageUri": "lib/",
       "languageVersion": "3.10"
     },
@@ -291,21 +291,21 @@
     },
     {
       "name": "test",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test-1.31.1",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test-1.31.2",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.11"
     },
     {
       "name": "test_api",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_api-0.7.12",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_api-0.7.13",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.11"
     },
     {
       "name": "test_core",
-      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_core-0.6.18",
+      "rootUri": "file:///Users/amitsharan/.pub-cache/hosted/pub.dev/test_core-0.6.19",
       "packageUri": "lib/",
-      "languageVersion": "3.10"
+      "languageVersion": "3.11"
     },
     {
       "name": "typed_data",
@@ -365,12 +365,12 @@
       "name": "pdfium_dart",
       "rootUri": "../",
       "packageUri": "lib/",
-      "languageVersion": "3.11"
+      "languageVersion": "3.12"
     }
   ],
   "generator": "pub",
-  "generatorVersion": "3.11.5",
+  "generatorVersion": "3.12.2",
   "flutterRoot": "file:///Users/amitsharan/development/flutter",
-  "flutterVersion": "3.41.9",
+  "flutterVersion": "3.44.4",
   "pubCache": "file:///Users/amitsharan/.pub-cache"
 }

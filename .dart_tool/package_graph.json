@@ -21,7 +21,7 @@
     },
     {
       "name": "test",
-      "version": "1.31.1",
+      "version": "1.31.2",
       "dependencies": [
         "analyzer",
         "async",
@@ -88,7 +88,7 @@
     },
     {
       "name": "hooks",
-      "version": "1.0.3",
+      "version": "2.0.2",
       "dependencies": [
         "collection",
         "crypto",
@@ -106,7 +106,7 @@
     },
     {
       "name": "code_assets",
-      "version": "1.0.0",
+      "version": "1.2.1",
       "dependencies": [
         "collection",
         "hooks"
@@ -156,7 +156,7 @@
     },
     {
       "name": "test_core",
-      "version": "0.6.18",
+      "version": "0.6.19",
       "dependencies": [
         "analyzer",
         "args",
@@ -183,7 +183,7 @@
     },
     {
       "name": "test_api",
-      "version": "0.7.12",
+      "version": "0.7.13",
       "dependencies": [
         "async",
         "boolean_selector",
