@@ -1,3 +1,8 @@
+## Unreleased
+
+- Use archive 4.6 verification to reject corrupt or truncated PDFium downloads before caching the library.
+- Close the HTTP download client automatically and include status codes in download errors.
+
 ## 0.2.1
 
 - Fixed PDFium loading in Flutter tests on macOS when PDFium is provided by the Flutter XCFramework ([#640](https://github.com/espresso3389/pdfrx/issues/640)).

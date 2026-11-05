@@ -1,9 +1,10 @@
 import 'dart:io';
 
-import 'package:archive/archive_io.dart';
 import 'package:code_assets/code_assets.dart';
 import 'package:hooks/hooks.dart';
 import 'package:http/http.dart' as http;
+
+import 'src/pdfium_archive.dart';
 
 const _pdfiumRelease = 'chromium%2F7811';
 const _assetName = 'libpdfium';
@@ -50,23 +51,20 @@ Future<void> _downloadPdfium({
     '$pdfiumRelease/pdfium-${target.archivePlatform}-${target.archiveArch}.tgz',
   );
 
-  final response = await http.Client().get(archiveUri);
+  final response = await http.get(archiveUri);
   if (response.statusCode != 200) {
-    throw Exception('Failed to download PDFium: $archiveUri');
-  }
-
-  final archive = TarDecoder().decodeBytes(
-    GZipDecoder().decodeBytes(response.bodyBytes),
-  );
-  final member = archive.findFile(target.archiveLibraryPath);
-  if (member == null) {
     throw Exception(
-      'PDFium archive $archiveUri does not contain ${target.archiveLibraryPath}.',
+      'Failed to download PDFium (HTTP ${response.statusCode}): $archiveUri',
     );
   }
 
+  final libraryBytes = decodePdfiumLibrary(
+    response.bodyBytes,
+    libraryPath: target.archiveLibraryPath,
+  );
+
   await output.parent.create(recursive: true);
-  await output.writeAsBytes(member.content as List<int>);
+  await output.writeAsBytes(libraryBytes);
 }
 
 final class _PdfiumTarget {
